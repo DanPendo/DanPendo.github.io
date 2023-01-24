@@ -12,9 +12,9 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id:              'example_id'   // Required if user is logged in, default creates anonymous ID
-                email:  'danny.pendo@pendo.io'      // Recommended if using Pendo Feedback, or NPS Email
-                full_name: 'my name'  // Recommended if using Pendo Feedback
+                id:              'example_id' ,  // Required if user is logged in, default creates anonymous ID
+                email:  'danny.pendo@pendo.io' ,     // Recommended if using Pendo Feedback, or NPS Email
+                full_name: 'my name', // Recommended if using Pendo Feedback
                 role: 'Admin'        // Optional
 
                 // You can add any additional visitor level key-values here,
@@ -22,8 +22,8 @@
             },
 
             account: {
-                id:         'example_account_id' // Required if using Pendo Feedback, default uses the value 'ACCOUNT-UNIQUE-ID'
-                name:      'my company'   // Optional
+                id:         'example_account_id', // Required if using Pendo Feedback, default uses the value 'ACCOUNT-UNIQUE-ID'
+                name:      'my company' ,  // Optional
                 is_paying: 'true'   // Recommended if using Pendo Feedback
                 // monthly_value:// Recommended if using Pendo Feedback
                 // planLevel:    // Optional
