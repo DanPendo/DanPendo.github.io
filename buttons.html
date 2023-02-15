@@ -595,6 +595,13 @@
     <script src="js/sb-admin-2.min.js"></script>
     
     <script type="text/javascript" src="/pendo.js"></script>
+    
+    pendo.track("Access Buttons Page", {
+  screenWidth: "JSON.stringify(window.innerWidth)",
+  screenHeight: "JSON.stringify(window.innerHeight)",
+  URL: "JSON.stringify(window.location.href)", 
+  PendoUser: "True",
+});
 
 </body>
 
