@@ -12,10 +12,11 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id:              'example_id' ,  // Required if user is logged in, default creates anonymous ID
+                id:              '' ,  // Required if user is logged in, default creates anonymous ID
                 email:  'danny.pendo@pendo.io' ,     // Recommended if using Pendo Feedback, or NPS Email
                 full_name: 'my name', // Recommended if using Pendo Feedback
-                role: 'Admin'        // Optional
+                role: 'Admin'     // Optional
+                
 
                 // You can add any additional visitor level key-values here,
                 // as long as it's not one of the above reserved names.
