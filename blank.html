@@ -479,18 +479,27 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script>
+
+    
+  <script>
     // Add this to your existing script section or at the end of the body tag
     const checkbox = document.getElementById('myCheckbox');
     const statusText = document.getElementById('status');
+    const booleanValueText = document.getElementById('booleanValue');
 
-    // Function to update the status based on checkbox state
+    // Function to update the status and capture the boolean value based on checkbox state
     checkbox.addEventListener('change', () => {
-        if (checkbox.checked) {
+        const isChecked = checkbox.checked;  // This stores the boolean value (true/false)
+
+        // Update the status text
+        if (isChecked) {
             statusText.textContent = "Checkbox is checked.";
         } else {
             statusText.textContent = "Checkbox is unchecked.";
         }
+
+        // Display the boolean value
+        booleanValueText.textContent = "Boolean value: " + isChecked;
     });
 </script>
 
