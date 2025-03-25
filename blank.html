@@ -20,9 +20,31 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <style>
+    /* Add this to your existing style section or create a new one */
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+</style>
+
+
 </head>
 
 <body id="page-top">
+
+    <!-- Add this where you want the checkbox to appear -->
+<div class="checkbox-container">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">Click me to toggle</label>
+</div>
+
+<p id="status">Checkbox is unchecked.</p>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -418,6 +440,21 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+    // Add this to your existing script section or at the end of the body tag
+    const checkbox = document.getElementById('myCheckbox');
+    const statusText = document.getElementById('status');
+
+    // Function to update the status based on checkbox state
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            statusText.textContent = "Checkbox is checked.";
+        } else {
+            statusText.textContent = "Checkbox is unchecked.";
+        }
+    });
+</script>
+
 
 </body>
 
